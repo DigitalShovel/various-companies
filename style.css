@@ -48,11 +48,11 @@ td {
   font-family: Poppins, sans-serif;
 }
 
-.name__arsomcube {
+.arsomcube__name {
   color: #2caae1;
 }
 
-.email__arsomcube {
+.arsomcube__email {
  color: #2caae1;
 }
 
@@ -65,12 +65,20 @@ td {
   gap: 1rem;
 }
 
-.name__kingscoins {
+.kingscoins__name {
   margin-top: 10px;
   color: #F8404C;
 }
 
-.email__kingscoins {
+.kingscoins__email {
   margin-top: 2px;
   color: #F8404C;
+}
+
+.connectcrypto {
+  font-family: 'Lucida Sans', sans-serif;
+}
+
+.connectcrypto__email {
+  color: #EC2127;
 }

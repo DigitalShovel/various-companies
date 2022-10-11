@@ -1,0 +1,72 @@
+html {
+  font-family: Poppins, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+td {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+.name {
+  font-weight: 600;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 13px;
+}
+
+.email {
+  text-decoration: none;
+  color: #2caae1;
+  font-size: 11px;
+}
+
+.arsomcube {
+  font-family: Poppins, sans-serif;
+}
+
+.name__arsomcube {
+  color: #2caae1;
+}
+
+.email__arsomcube {
+ color: #2caae1;
+}
+
+.kingscoins tr {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, sans-serif;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.name__kingscoins {
+  margin-top: 10px;
+  color: #F8404C;
+}
+
+.email__kingscoins {
+  margin-top: 2px;
+  color: #F8404C;
+}

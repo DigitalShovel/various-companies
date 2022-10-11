@@ -4,8 +4,23 @@ html {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1rem;
+}
+
+table {
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: end;
+  display: flex;
+}
+
+table:nth-of-type(odd) {
+  background-color: rgb(230, 230, 230);
+}
+
+table:nth-of-type(even) {
+  background-color: rgb(240, 240, 240);
 }
 
 h1 {
@@ -61,7 +76,6 @@ td {
   flex-direction: row;
   font-family: Arial, sans-serif;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
 }
 
@@ -77,6 +91,10 @@ td {
 
 .connectcrypto {
   font-family: 'Lucida Sans', sans-serif;
+}
+
+.connectcrypto__name {
+  margin-top: 10px;
 }
 
 .connectcrypto__email {

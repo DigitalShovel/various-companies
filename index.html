@@ -5,58 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
+    <script defer src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 
     <title>Various Companies</title>
   </head>
 
   <body>
-    <h1>Made for research purposes only.</h1>
-
     <main class="grid">
-      <table class="arsomcube">
-        <tbody>
-          <tr>
-            <td>
-              <img class="logo" title="Arsomcube Logo" src="https://drive.google.com/uc?id=1J7pqJ1fh_rBBFUW3LTJHqDk6oF5-bU7b" role="presentation" />
-              <span class="name arsomcube__name">George Anderson</span>
-              <span class="title arsomcube__title">Marketing Coordinator</span>
-              <a class="email arsomcube__email" href="mailto:george.anderson@gmail.com">george.anderson@gmail.com</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="grid__item">
+        <table class="company arsomcube">
+          <tbody>
+            <tr>
+              <td>
+                <img class="logo" title="Arsomcube Logo" src="https://drive.google.com/uc?id=1J7pqJ1fh_rBBFUW3LTJHqDk6oF5-bU7b" role="presentation" />
+                <div class="details">
+                  <span class="name arsomcube__name">George Anderson</span>
+                  <span class="title arsomcube__title">Marketing Coordinator</span>
+                  <a class="email arsomcube__email" href="mailto:george.anderson@gmail.com">george.anderson@gmail.com</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="kingscoins">
-        <tbody>
-          <tr>
-            <td>
-              <img class="logo kingscoins__logo" title="Kings Coins Logo" src="https://drive.google.com/uc?id=1JTxDy9pSmih2vpO8GL8enqlDdaIL6-u4" role="presentation" />
-            </td>
-            <td>
-              <span class="name kingscoins__name">Eric Willey</span>
-              <span class="title">Communications Strategist</span>
-              <a class="email kingscoins__email" href="mailto:eric.willey.kc@gmail.com">eric.willey.kc@gmail.com</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="grid__item">
+        <table class="company kingscoins">
+          <tbody>
+            <tr>
+              <td>
+                <img class="logo kingscoins__logo" title="Kings Coins Logo" src="https://drive.google.com/uc?id=1JTxDy9pSmih2vpO8GL8enqlDdaIL6-u4" role="presentation" />
+              </td>
+              <td>
+                <span class="name kingscoins__name">Eric Willey</span>
+                <span class="title">Communications Strategist</span>
+                <a class="email kingscoins__email" href="mailto:eric.willey.kc@gmail.com">eric.willey.kc@gmail.com</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-      <table class="connectcrypto">
-        <tbody>
-          <tr>
-            <td>
-              <img class="logo connectcrypto__logo" title="Connect Crypto Logo" src="https://drive.google.com/uc?id=1K4Ul36Uq6Nuwr4xYVDwewzYzaVXigLmZ" role="presentation" />
-            </td>
-            <td>
-              <span class="name connectcrypto__name">Adrianna Wash</span>
-              <span class="title">Lead Market Specialist</span>
-              <a class="email connectcrypto__email" href="mailto:adrianna.wash@gmail.com">adrianna.wash@gmail.com</a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="grid__item">
+        <table class="company connectcrypto">
+          <tbody>
+            <tr>
+              <td>
+                <img class="logo connectcrypto__logo" title="Connect Crypto Logo" src="https://drive.google.com/uc?id=1K4Ul36Uq6Nuwr4xYVDwewzYzaVXigLmZ" role="presentation" />
+              </td>
+              <td>
+                <span class="name connectcrypto__name">Adrianna Wash</span>
+                <span class="title">Lead Market Specialist</span>
+                <a class="email connectcrypto__email" href="mailto:adrianna.wash@gmail.com">adrianna.wash@gmail.com</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </main>
   </body>
 </html>

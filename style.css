@@ -1,11 +1,96 @@
+:root {
+  --shadow-color: 0deg 0% 58%;
+  --shadow-elevation-low: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.34), 0.4px 0.7px 0.9px -1.2px hsl(var(--shadow-color) / 0.34), 1px 1.7px 2.2px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.36), 0.8px 1.4px 1.8px -0.8px hsl(var(--shadow-color) / 0.36), 2px 3.6px 4.6px -1.7px hsl(var(--shadow-color) / 0.36), 4.8px 8.7px 11.2px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.34), 1.4px 2.5px 3.2px -0.4px hsl(var(--shadow-color) / 0.34), 2.6px 4.7px 6px -0.7px hsl(var(--shadow-color) / 0.34), 4.3px 7.8px 10px -1.1px hsl(var(--shadow-color) / 0.34), 6.9px 12.5px 16.1px -1.4px hsl(var(--shadow-color) / 0.34), 10.8px 19.5px 25.1px -1.8px hsl(var(--shadow-color) / 0.34), 16.4px 29.6px 38.1px -2.1px hsl(var(--shadow-color) / 0.34), 24.2px 43.6px 56.1px -2.5px hsl(var(--shadow-color) / 0.34);
+}
+
 html {
-  font-family: Poppins, sans-serif;
+  padding: 2rem;
+  font-family: Inter, sans-serif;
+  background-color: #F0F4F8;
+}
+
+
+h1 {
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0 0 30px;
+  color: #002159;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  background-color: white;
+  box-shadow: var(--shadow-elevation-medium);
+  border-radius: 8px;
+}
+
+.grid__button {
+  width: 100%;
+  padding: 0.5rem 0;
+  background-color: hsla(213, 75%, 54%, 1);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grid__button:hover {
+  background-color: #0552B5;
+}
+
+.grid__button:active {
+  background-color: #03449E;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #002159;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #002159 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
 
 table {
@@ -13,21 +98,6 @@ table {
   border-radius: 10px;
   align-items: end;
   display: flex;
-}
-
-table:nth-of-type(odd) {
-  background-color: rgb(230, 230, 230);
-}
-
-table:nth-of-type(even) {
-  background-color: rgb(240, 240, 240);
-}
-
-h1 {
-  font-size: 24px;
-  line-height: 1.2;
-  text-align: left;
-  margin-bottom: 60px;
 }
 
 td {
@@ -41,6 +111,12 @@ td {
   max-height: 100px;
   object-fit: contain;
   object-position: left;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
 }
 
 .name {
@@ -68,7 +144,7 @@ td {
 }
 
 .arsomcube__email {
- color: #2caae1;
+  color: #2caae1;
 }
 
 .kingscoins tr {
@@ -81,16 +157,16 @@ td {
 
 .kingscoins__name {
   margin-top: 10px;
-  color: #F8404C;
+  color: #f8404c;
 }
 
 .kingscoins__email {
   margin-top: 2px;
-  color: #F8404C;
+  color: #f8404c;
 }
 
 .connectcrypto {
-  font-family: 'Lucida Sans', sans-serif;
+  font-family: Tahoma, sans-serif;
 }
 
 .connectcrypto__name {
@@ -98,5 +174,5 @@ td {
 }
 
 .connectcrypto__email {
-  color: #EC2127;
+  color: #ec2127;
 }

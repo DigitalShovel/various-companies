@@ -103,7 +103,6 @@ td {
   display: flex;
   flex-direction: column;
   line-height: 1.3;
-  max-width: 200px;
 }
 
 .logo {
@@ -114,8 +113,15 @@ td {
 }
 
 .divider {
+  display: block;
+  max-width: 1px;
   height: 50px;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.divider__horizontal {
+  display: block;
+  max-height: 1px;
+  width: 100%;
 }
 
 .details {
@@ -213,10 +219,13 @@ td {
   max-height: 50px;
 }
 
+.earthenergies__divider {
+  background-color: #084d562a;
+}
+
 .earthenergies tr {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -240,6 +249,10 @@ td {
   max-height: 50px;
 }
 
+.aliensteel__divider {
+  background-color: #974dc22a;
+}
+
 .aliensteel tr {
   display: flex;
   flex-direction: row;
@@ -256,15 +269,19 @@ td {
 }
 
 .aliensteel__email {
-  color: #abd037;
+  color: #974dc2;
 }
 
 .sunpeakstrade {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 .sunpeakstrade__logo {
   max-height: 50px;
+}
+
+.sunpeakstrade__divider {
+  background-color: #0656293a;
 }
 
 .sunpeakstrade tr {
@@ -275,11 +292,11 @@ td {
 }
 
 .sunpeakstrade__name {
-  color: #000;
+  color: #065629;
 }
 
 .sunpeakstrade__title {
-  color: #065629;
+  color: #000;
 }
 
 .sunpeakstrade__email {

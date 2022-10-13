@@ -1,16 +1,15 @@
 :root {
-  --shadow-color: 0deg 0% 58%;
-  --shadow-elevation-low: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.34), 0.4px 0.7px 0.9px -1.2px hsl(var(--shadow-color) / 0.34), 1px 1.7px 2.2px -2.5px hsl(var(--shadow-color) / 0.34);
-  --shadow-elevation-medium: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.36), 0.8px 1.4px 1.8px -0.8px hsl(var(--shadow-color) / 0.36), 2px 3.6px 4.6px -1.7px hsl(var(--shadow-color) / 0.36), 4.8px 8.7px 11.2px -2.5px hsl(var(--shadow-color) / 0.36);
-  --shadow-elevation-high: 0.2px 0.4px 0.5px hsl(var(--shadow-color) / 0.34), 1.4px 2.5px 3.2px -0.4px hsl(var(--shadow-color) / 0.34), 2.6px 4.7px 6px -0.7px hsl(var(--shadow-color) / 0.34), 4.3px 7.8px 10px -1.1px hsl(var(--shadow-color) / 0.34), 6.9px 12.5px 16.1px -1.4px hsl(var(--shadow-color) / 0.34), 10.8px 19.5px 25.1px -1.8px hsl(var(--shadow-color) / 0.34), 16.4px 29.6px 38.1px -2.1px hsl(var(--shadow-color) / 0.34), 24.2px 43.6px 56.1px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-color: 210deg 11% 60%;
+  --shadow-elevation-low: 0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34), 0px 0.5px 0.6px -1.2px hsl(var(--shadow-color) / 0.34), 0px 1.3px 1.5px -2.5px hsl(var(--shadow-color) / 0.34);
+  --shadow-elevation-medium: 0px 0.3px 0.3px hsl(var(--shadow-color) / 0.36), 0px 1.1px 1.2px -0.8px hsl(var(--shadow-color) / 0.36), 0px 2.7px 3px -1.7px hsl(var(--shadow-color) / 0.36), 0px 6.6px 7.4px -2.5px hsl(var(--shadow-color) / 0.36);
+  --shadow-elevation-high: 0px 0.3px 0.3px hsl(var(--shadow-color) / 0.34), 0px 1.9px 2.1px -0.4px hsl(var(--shadow-color) / 0.34), 0px 3.6px 4.1px -0.7px hsl(var(--shadow-color) / 0.34), 0px 5.9px 6.6px -1.1px hsl(var(--shadow-color) / 0.34), -0.1px 9.4px 10.6px -1.4px hsl(var(--shadow-color) / 0.34), -0.1px 14.6px 16.4px -1.8px hsl(var(--shadow-color) / 0.34), -0.1px 22.2px 25px -2.1px hsl(var(--shadow-color) / 0.34), -0.2px 32.8px 36.9px -2.5px hsl(var(--shadow-color) / 0.34);
 }
 
 html {
   padding: 2rem;
   font-family: Inter, sans-serif;
-  background-color: #F0F4F8;
+  background-color: #f0f4f8;
 }
-
 
 h1 {
   font-size: 24px;
@@ -46,11 +45,11 @@ h1 {
 }
 
 .grid__button:hover {
-  background-color: #0552B5;
+  background-color: #0552b5;
 }
 
 .grid__button:active {
-  background-color: #03449E;
+  background-color: #03449e;
 }
 
 .tooltip {
@@ -175,4 +174,54 @@ td {
 
 .connectcrypto__email {
   color: #ec2127;
+}
+
+.farmchain {
+  font-family: Montserrat, sans-serif;
+}
+
+.farmchain__logo {
+  max-height: 50px;
+}
+
+.farmchain tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.farmchain__title {
+  color: #aaa;
+}
+
+.farmchain__email {
+  color: #414042;
+}
+
+.earthenergies {
+  font-family: Verdana, sans-serif;
+}
+
+.earthenergies__logo {
+  max-height: 50px;
+}
+
+.earthenergies tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.earthenergies__name {
+  color: #084D56;
+}
+
+.earthenergies__title {
+  color: #084D56;
+}
+
+.earthenergies__email {
+  color: #30AC71;
 }

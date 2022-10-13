@@ -21,7 +21,7 @@ h1 {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
@@ -102,6 +102,7 @@ table {
 td {
   display: flex;
   flex-direction: column;
+  line-height: 1.3;
   max-width: 200px;
 }
 
@@ -110,6 +111,11 @@ td {
   max-height: 100px;
   object-fit: contain;
   object-position: left;
+}
+
+.divider {
+  height: 50px;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .details {
@@ -215,13 +221,67 @@ td {
 }
 
 .earthenergies__name {
-  color: #084D56;
+  color: #084d56;
 }
 
 .earthenergies__title {
-  color: #084D56;
+  color: #084d56;
 }
 
 .earthenergies__email {
-  color: #30AC71;
+  color: #30ac71;
+}
+
+.aliensteel {
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.aliensteel__logo {
+  max-height: 50px;
+}
+
+.aliensteel tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.aliensteel__name {
+  color: #000;
+}
+
+.aliensteel__title {
+  color: #000;
+}
+
+.aliensteel__email {
+  color: #abd037;
+}
+
+.sunpeakstrade {
+  font-family: "Raleway", sans-serif;
+}
+
+.sunpeakstrade__logo {
+  max-height: 50px;
+}
+
+.sunpeakstrade tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sunpeakstrade__name {
+  color: #000;
+}
+
+.sunpeakstrade__title {
+  color: #065629;
+}
+
+.sunpeakstrade__email {
+  color: #96C122;
 }
